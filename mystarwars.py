@@ -9,15 +9,16 @@ window = turtle.Screen()
 window.setup(width = 1200, height=750)
 window.title("star wars game")
 window.bgcolor('black')
-window.bgpic("star wars.gif") # you can use any image in gif format and put it in the same folder in which your code file exists. #if you are not using any images you can just comment out this line.
+#window.bgpic("star wars.gif") # you can use any image in gif format and put it in the same folder in which your code file exists. 
+#if you are not using any images you can just comment out this line.
 window.tracer(0)
-
+'''
 t = turtle.Turtle()
 t.write('', font = (1))
 time.sleep(3)
 t.hideturtle()
-
-window.bgpic("midfinal.gif") # again you can use any images as per your choice
+'''
+#window.bgpic("midfinal.gif") # again you can use any images as per your choice
 shape1 = ((0,70),(0,60),(-2.5,60),(2.5,60),(0,60),(0,57),(-3.5,57),(3.5,57),(0,57),(0,45),(2.5,40),(2.5,35),(5,30),(5,5),(10,2.5),(25,0),(25,10),(27.5,10),(27.5,25),(27.5,10),(30,10),(30,-15),(35,-20),(35,-25),(30,-20),(15,-15),(20,-30),(10,-20),(-10,-20),(-20,-30),(-15,-15),(-30,-20),(-35,-25),(-35,-20),(-30,-15),(-30,10),(-27.5,10),(-27.5,25),(-27.5,10),(-25,10),(-25,0),(-10,2.5),(-5,5),(-5,30),(-2.5,35),(-2.5,40),(0,45),(-5,5),(-15,-15),(0,0),(15,-15),(5,5),(0,45),(-5,5),(-30,-20),(-5,5),(0,45),(5,5),(30,-20),(5,5),(0,45),(-5,5),(-30,-15),(-5,5),(0,45),(5,5),(30,-15),(5,5),(0,45))
 window.register_shape("gun", shape1)
 shape2 = ((7,3),(3,7),(-3,7),(-7,3),(-7,-3),(-3,-7),(3,-7),(7,-3),(7,3))
@@ -161,7 +162,7 @@ while True:
 
 	if condition == False:
 		pen.write("Score: {}".format(gun.score),False ,align = "center", font = ("Times New Roman",24, "normal"))
-		window.bgpic("game over.gif")
+		#window.bgpic("game over.gif")
 		gun.hideturtle()
 		#bullet.showturtle()
 		#asteroid.showturtle()
